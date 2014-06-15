@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <title>TeamWork Droopy</title>
+     <style>
+        body {
+           // background-image: url(images/backgr.png)
+        }
+    </style>
+    <script src="bower_components/raphael/raphael-min.js"></script>
+</head>
+<body>
+    <script src="memory-game.js"></script>
+	<canvas id="canvas" width="1000" height="600"></canvas>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext("2d");
+        var paper = Raphael(150, 30, 800, 600);
+        var clickCount = 0;
+        var conterY = 110;
+        var indexCounter = 0;
+
+        memoryArray.memoryTileShuffle();
+        initialize();
+    </script>
+</body>
+</html>
